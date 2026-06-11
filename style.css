@@ -1,0 +1,237 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg,
+            #667eea,
+            #764ba2);
+    min-height: 100vh;
+    padding: 30px 0;
+}
+
+/* Hero Section */
+
+.hero-section {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 25px;
+
+    padding: 50px 20px;
+
+    color: white;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+
+    animation: float 4s ease-in-out infinite;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+}
+
+.hero-section p {
+    margin-top: 10px;
+    opacity: .9;
+}
+
+/* Filter Box */
+
+.filter-box {
+    background: rgba(255, 255, 255, 0.18);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+}
+
+/* Inputs */
+
+.form-control,
+.form-select {
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, .95);
+
+    padding-inline: 15px;
+}
+
+.form-control:focus,
+.form-select:focus {
+
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+
+    border: none;
+}
+
+#search {
+    flex: 2;
+}
+
+#category {
+    flex: 1;
+}
+
+/* Product Cards */
+
+.card {
+
+    background: linear-gradient(135deg,
+            #eef2ff,
+            #e9d5ff);
+
+    border: none;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: all .4s ease;
+
+    height: 100%;
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .18);
+}
+
+/* Card Image */
+
+.card img {
+
+    height: 220px;
+
+    object-fit: cover;
+
+    transition: .5s;
+}
+
+.card:hover img {
+
+    transform: scale(1.08);
+}
+
+/* Card Body */
+
+.card-body {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.card-title {
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+.category {
+
+    color: #6b7280;
+
+    font-size: .9rem;
+}
+
+.price {
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    color: #6d28d9;
+}
+
+/* Button */
+
+.btn-custom {
+
+    background: linear-gradient(135deg,
+            #667eea,
+            #8b5cf6);
+
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    transition: .3s;
+}
+
+.btn-custom:hover {
+
+    color: white;
+
+    transform: scale(1.03);
+}
+
+/* Animation */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+    .hero-section {
+        padding: 35px 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .filter-box {
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+}
