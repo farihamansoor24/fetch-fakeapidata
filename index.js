@@ -150,8 +150,9 @@ function showAllProducts(data) {
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="${item.image}" alt="${item.name}">
           <div class="card-body">
+          <p class="card-text fs-6">${item.name}</p>
             <h5 class="card-title">${item.category}</h5>
-            <p class="card-text"><strong>${item.name}</strong></p>
+            
             <p class="card-text"><strong>$ ${item.price}</strong></p>
           </div>
         </div>
